@@ -1,0 +1,11 @@
+secretGenerator:
+  - name: db-password
+    literals:
+      - password=postpass
+  - name: django
+    literals: 
+      - secret=mysecretkey
+
+resources:
+  - postgres.yml
+  - django.yml
